@@ -1,5 +1,9 @@
 package com.stuffed.animal.api.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.stuffed.animal.api.designpatterns.state.OrderState;
+import com.stuffed.animal.api.designpatterns.state.OrderedState;
+import com.stuffed.animal.api.designpatterns.state.ShippedState;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.keyvalue.annotation.KeySpace;
 
@@ -19,6 +23,9 @@ public class Order {
     private List<StuffedAnimal> stuffedAnimals;
 
     private Integer customerId;
+
+    @JsonIgnore
+    private OrderState orderState;
 
     public Order() {
     }
@@ -70,4 +77,23 @@ public class Order {
     public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
+
+    public OrderState getOrderState() {
+        return orderState;
+    }
+
+    public void setOrderState(OrderState orderState) {
+        this.orderState = orderState;
+    }
+
+    public String getOrderStatus() {
+        if (this.orderState instanceof OrderedState) {
+            return "confirmed";
+        } else if (this.orderState instanceof ShippedState) {
+            return "shipped";
+        } else {
+            return "delivered";
+        }
+    }
+
 }

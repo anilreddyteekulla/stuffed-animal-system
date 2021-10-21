@@ -1,4 +1,4 @@
-package com.stuffed.animal.api.designpatterns.builderpattern;
+package com.stuffed.animal.api.designpatterns.builder;
 
 import com.stuffed.animal.api.models.StuffedAnimal;
 

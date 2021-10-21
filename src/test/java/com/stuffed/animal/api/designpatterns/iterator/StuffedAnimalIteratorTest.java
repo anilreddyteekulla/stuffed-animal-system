@@ -1,7 +1,6 @@
-package com.stuffed.animal.api.designpatterns;
+package com.stuffed.animal.api.designpatterns.iterator;
 
-import com.stuffed.animal.api.designpatterns.builderpattern.BearStuffedAnimalBuilder;
-import com.stuffed.animal.api.designpatterns.iterator.StuffedAnimalIterator;
+import com.stuffed.animal.api.designpatterns.builder.BearStuffedAnimalBuilder;
 import com.stuffed.animal.api.models.StuffedAnimal;
 import org.junit.jupiter.api.Test;
 

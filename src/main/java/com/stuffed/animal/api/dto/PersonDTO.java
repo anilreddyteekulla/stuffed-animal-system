@@ -1,13 +1,6 @@
-package com.stuffed.animal.api.models;
+package com.stuffed.animal.api.dto;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.keyvalue.annotation.KeySpace;
-
-import java.util.List;
-
-@KeySpace("customers")
-public class Customer {
-    @Id
+public class PersonDTO {
     private Integer id;
 
     private String firstName;
@@ -16,13 +9,11 @@ public class Customer {
 
     private String email;
 
-    private List<Order> orders;
-
-    public Customer(String firstName, String lastName, String email, List<Order> orders) {
+    public PersonDTO(Integer id, String firstName, String lastName, String email) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.orders = orders;
     }
 
     public Integer getId() {
@@ -55,17 +46,5 @@ public class Customer {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
-    }
-
-    public void addOrders(List<Order> orders) {
-        // TODO implement iterator pattern here
     }
 }

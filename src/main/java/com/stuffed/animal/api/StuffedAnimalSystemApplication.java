@@ -6,8 +6,8 @@ import org.springframework.data.map.repository.config.EnableMapRepositories;
 
 @SpringBootApplication
 @EnableMapRepositories
-public class StuffedAnimalStoreApplication {
+public class StuffedAnimalSystemApplication {
     public static void main(String[] args) {
-        SpringApplication.run(StuffedAnimalStoreApplication.class, args);
+        SpringApplication.run(StuffedAnimalSystemApplication.class, args);
     }
 }

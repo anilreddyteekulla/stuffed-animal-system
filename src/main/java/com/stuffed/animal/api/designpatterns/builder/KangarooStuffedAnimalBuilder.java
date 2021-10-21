@@ -1,10 +1,10 @@
-package com.stuffed.animal.api.designpatterns.builderpattern;
+package com.stuffed.animal.api.designpatterns.builder;
 
 import java.math.BigDecimal;
 
-public class KoalaStuffedAnimalBuilder extends StuffedAnimalBuilder {
-    public KoalaStuffedAnimalBuilder() {
-        this.name = "Koala";
+public class KangarooStuffedAnimalBuilder extends StuffedAnimalBuilder {
+    public KangarooStuffedAnimalBuilder() {
+        this.name = "Kangaroo";
     }
 
     public StuffedAnimalBuilder addFabric(String fabric) {

@@ -1,9 +1,9 @@
 package com.stuffed.animal.api.config;
 
-import com.stuffed.animal.api.designpatterns.builderpattern.BearStuffedAnimalBuilder;
-import com.stuffed.animal.api.designpatterns.builderpattern.BunnyStuffedAnimalBuilder;
-import com.stuffed.animal.api.designpatterns.builderpattern.KangarooStuffedAnimalBuilder;
-import com.stuffed.animal.api.designpatterns.builderpattern.KoalaStuffedAnimalBuilder;
+import com.stuffed.animal.api.designpatterns.builder.BearStuffedAnimalBuilder;
+import com.stuffed.animal.api.designpatterns.builder.BunnyStuffedAnimalBuilder;
+import com.stuffed.animal.api.designpatterns.builder.KangarooStuffedAnimalBuilder;
+import com.stuffed.animal.api.designpatterns.builder.KoalaStuffedAnimalBuilder;
 import com.stuffed.animal.api.designpatterns.iterator.StuffedAnimalIterator;
 import com.stuffed.animal.api.models.StuffedAnimal;
 import com.stuffed.animal.api.repositories.StuffedAnimalRepository;

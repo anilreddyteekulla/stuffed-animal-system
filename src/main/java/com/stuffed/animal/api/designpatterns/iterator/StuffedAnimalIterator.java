@@ -4,7 +4,7 @@ import com.stuffed.animal.api.models.StuffedAnimal;
 
 import java.util.List;
 
-public class StuffedAnimalIterator implements IIterator {
+public class StuffedAnimalIterator implements IIterator<StuffedAnimal> {
     List<StuffedAnimal> list;
     int index = 0;
 
