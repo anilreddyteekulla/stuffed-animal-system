@@ -6,7 +6,7 @@ plugins {
 	id 'idea'
 }
 
-group = 'com.example'
+group = 'com.stuffed'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
