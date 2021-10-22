@@ -1,7 +1,7 @@
 Stuffed-Animal-System
 ======================
 
-#What is it?
+# What is it?
 
 This project/system is a REST API that performs CRUD (Create, Read, Update, and Delete) operations on Stuffed animal, Customer(User), Order entities and also publishes an event when these entities are created/updated. The design patterns used in this project are the factory, iterator, builder, and state design patterns.
 
