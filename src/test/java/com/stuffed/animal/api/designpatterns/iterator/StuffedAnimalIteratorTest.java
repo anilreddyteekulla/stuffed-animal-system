@@ -21,7 +21,7 @@ public class StuffedAnimalIteratorTest {
         List<StuffedAnimal> stuffedAnimalList = Collections.emptyList();
 
         // when: create iterator with an empty collection
-        StuffedAnimalIterator stuffedAnimalIterator = new StuffedAnimalIterator(Collections.emptyList());
+        StuffedAnimalIterator stuffedAnimalIterator = new StuffedAnimalIterator(stuffedAnimalList);
 
         // then
         assertFalse(stuffedAnimalIterator.hasNext());
@@ -33,7 +33,7 @@ public class StuffedAnimalIteratorTest {
         List<StuffedAnimal> stuffedAnimalList = Collections.emptyList();
 
         // when: create iterator with an empty collection
-        StuffedAnimalIterator stuffedAnimalIterator = new StuffedAnimalIterator(Collections.emptyList());
+        StuffedAnimalIterator stuffedAnimalIterator = new StuffedAnimalIterator(stuffedAnimalList);
 
         // then
         assertThrows(IndexOutOfBoundsException.class, stuffedAnimalIterator::next);

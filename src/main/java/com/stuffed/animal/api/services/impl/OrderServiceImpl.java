@@ -7,7 +7,6 @@ import com.stuffed.animal.api.designpatterns.state.OrderProcessor;
 import com.stuffed.animal.api.exceptions.NoPersonFoundException;
 import com.stuffed.animal.api.models.Order;
 import com.stuffed.animal.api.models.StuffedAnimal;
-import com.stuffed.animal.api.repositories.LineItemRepository;
 import com.stuffed.animal.api.repositories.OrderRepository;
 import com.stuffed.animal.api.repositories.PersonRepository;
 import com.stuffed.animal.api.services.OrderService;
@@ -26,9 +25,6 @@ import java.util.concurrent.TimeUnit;
 public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderRepository orderRepository;
-
-    @Autowired
-    private LineItemRepository lineItemRepository;
 
     @Autowired
     private PersonRepository personRepository;
